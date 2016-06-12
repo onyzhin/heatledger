@@ -1,4 +1,4 @@
-# Artcom front-end
+# Heat ledger front-end
 
 ## Prerequisites
 
