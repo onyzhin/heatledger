@@ -1,0 +1,50 @@
+.header{
+	background-color: rgba(0, 0, 0, 0.702);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	padding: 25px 0;
+
+	&-logo{
+		float: left;
+		width: px(465);
+		position: relative;
+		z-index: 2;
+	}
+	&-menu{   
+		position: relative;
+		@extend %clear;
+		ul{
+			display: table;
+			width: 100%;
+			li{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				height: 30px;
+				a{
+					text-decoration: none;
+					font-size: px(14);
+					font-family: "UniSans";
+					color: rgb(122, 122, 122);
+					text-transform: uppercase;
+					line-height: 1.2;
+					padding: 18px 25px;
+					display: block;
+				}
+				&.active,
+				& a:hover{ 
+					text-decoration: underline;
+				}
+				&:first-child{
+					text-align: left;
+				}
+				&:last-child{
+					text-align: right;
+				}
+			}
+		}
+	}
+}

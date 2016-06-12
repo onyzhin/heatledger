@@ -1,0 +1,43 @@
+.thumbnails{
+	@include background('pattern-0.png');
+	padding: px(26) 0 px(30);
+	.row{
+		margin-left: -10px;
+		margin-right: -10px;
+		@extend %clear;
+		display: flex;
+    	flex-wrap: wrap; 
+		.col{
+			float: left;
+			width: 33.33%;
+			padding: 0 10px;
+			display: flex;
+			@media (max-width:767px){ 
+				width: 100%;
+			}
+		}
+	}
+	&-item{
+		padding: 20px 30px;
+		min-height: 242px;
+		background: #101010;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		&-inner{
+
+		}
+	}
+	h2{
+		font-size: px(38);
+		font-family: 'UniSans';
+		color: #fd5f00;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	p{
+		font-size: px(14); 
+		color: #747171;
+	}
+}

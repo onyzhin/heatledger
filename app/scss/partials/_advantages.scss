@@ -1,0 +1,12 @@
+.advantages{
+	@include background('pattern-4.png');
+	padding: px(26) 0 px(0);
+	&-inner{
+		background-color: rgba(255, 255, 255, 0.812);
+	}
+	.ctext{
+		p{
+			color: #657fa1;
+		}
+	}
+}

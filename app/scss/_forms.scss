@@ -1,0 +1,52 @@
+%input{	
+	display: block;
+	width: 100%;
+	outline: none;
+	border: 1px solid #eaeaea;
+	background: #f7f7f7;
+	box-shadow: none;
+	outline: none;
+	font-family: $fontFamily;
+}
+
+.form{
+	position: relative;
+	legend{		
+		font-size: px(48);
+		font-family: "UniSans";		
+		font-weight: 300;
+		color: rgb(255, 106, 47);
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: left;
+	}
+	&-field{
+		margin-bottom: 15px; 
+		label{
+			font-size: $bodyFontSize; 
+			display: block; 
+			margin-bottom: 15px;
+		}
+		@extend %last;
+	}
+	.zNice-tInput input{
+		height: 43px;
+		padding: 5px 15px;
+	}
+	.zNice-tArea textarea{		
+		padding: 15px;		
+	}
+	.zNice-tArea textarea, .zNice-tInput input{
+		font-size: 16px;
+		font-family: "Roboto";
+		color: rgb(104, 112, 120);
+		background: transparent;
+		border-width: 0;
+	}
+	.zNice-tInput .zNice-bg,
+	.zNice-tArea .zNice-bg{
+		border-radius: 3px;
+		background-color: rgb(255, 255, 255);
+		border-width: 0;
+	}
+}

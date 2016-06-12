@@ -1,0 +1,15 @@
+.wallet{
+	@include background('pattern-2.png');
+	padding: px(50) 0 px(90);
+	&-inner{
+		background-color: rgba(255, 255, 255, 0.831);
+	}
+	.ctext{
+		p{
+			font-size: px(15);
+			color: rgb(52, 52, 85);
+			line-height: 1.733;
+			text-align: center;			
+		}
+	}
+}
